@@ -1,0 +1,30 @@
+.card {
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem var(--color-medium-shade);
+  font-size: 1rem;
+
+
+  .card-title {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &.primary {
+    background: var(--color-light);
+    color: var(--color-dark);
+
+    .card-title {
+      color: var(--color-primary);
+    }
+  }
+
+  &.secondary {
+    background: var(--color-secondary);
+    color: var(--color-dark);
+
+    .card-title {
+      color: var(--color-primary);
+    }
+  }
+}

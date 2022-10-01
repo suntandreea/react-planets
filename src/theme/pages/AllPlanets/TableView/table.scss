@@ -1,0 +1,35 @@
+.table {
+  width: 100%;
+  overflow-X: scroll;
+
+  th {
+    padding: 0 0.4rem 0.4rem;
+    text-align: left;
+  }
+
+  tbody {
+    td {
+      padding: 0.4rem;
+    }
+
+    tr {
+      border-top: 1px solid rgba(var(--color-primary-rgb), 0.2);
+      font-size: 0.8rem;
+      vertical-align: middle;
+
+      &:nth-child(even) {
+        background: rgba(var(--color-primary-rgb), 0.1);
+      }
+
+      &:hover {
+        color: var(--color-primary);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .table-button {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+}

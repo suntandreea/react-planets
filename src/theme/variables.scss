@@ -1,0 +1,81 @@
+/* http://colormind.io */
+
+:root {
+  /* Max element width */
+  --max-element-width: 1200px;
+
+  /* Media queries breakpoints using max-width */
+
+  --br-pt-1: 575.98px;
+  --br-pt-2: 767.98px;
+  --br-pt-3: 991.98px;
+  --br-pt-4: 1199.98px;
+
+  /* Main brand color */
+  --color-primary: #eb7558;
+  --color-primary-rgb: 235, 117, 88;
+  --color-primary-contrast: #000000;
+  --color-primary-contrast-rgb: 0, 0, 0;
+  --color-primary-shade: #cf674d;
+  --color-primary-tint: #ed8369;
+
+  /* Light accent */
+  --color-secondary: #b67f8d;
+  --color-secondary-rgb: 182, 127, 141;
+  --color-secondary-contrast: #000000;
+  --color-secondary-contrast-rgb: 0, 0, 0;
+  --color-secondary-shade: #a0707c;
+  --color-secondary-tint: #bd8c98;
+
+  /* Dark accent */
+  --color-tertiary: #ba3c51;
+  --color-tertiary-rgb: 186, 60, 81;
+  --color-tertiary-contrast: #ffffff;
+  --color-tertiary-contrast-rgb: 255, 255, 255;
+  --color-tertiary-shade: #a43547;
+  --color-tertiary-tint: #c15062;
+
+  --color-success: #2dd36f;
+  --color-success-rgb: 45, 211, 111;
+  --color-success-contrast: #000000;
+  --color-success-contrast-rgb: 0, 0, 0;
+  --color-success-shade: #28ba62;
+  --color-success-tint: #42d77d;
+
+  --color-warning: #ffc409;
+  --color-warning-rgb: 255, 196, 9;
+  --color-warning-contrast: #000000;
+  --color-warning-contrast-rgb: 0, 0, 0;
+  --color-warning-shade: #e0ac08;
+  --color-warning-tint: #ffca22;
+
+  --color-danger: #eb445a;
+  --color-danger-rgb: 235, 68, 90;
+  --color-danger-contrast: #ffffff;
+  --color-danger-contrast-rgb: 255, 255, 255;
+  --color-danger-shade: #cf3c4f;
+  --color-danger-tint: #ed576b;
+
+  --color-dark: #18101d;
+  --color-dark-rgb: 24, 16, 29;
+  --color-dark-contrast: #ffffff;
+  --color-dark-contrast-rgb: 255, 255, 255;
+  --color-dark-shade: #150e1a;
+  --color-dark-tint: #2f2834;
+
+  /* Dark shades */
+  --color-medium: #41334a;
+  --color-medium-rgb: 65, 51, 74;
+  --color-medium-contrast: #ffffff;
+  --color-medium-contrast-rgb: 255, 255, 255;
+  --color-medium-shade: #392d41;
+  --color-medium-tint: #54475c;
+
+  /* Light shades  */
+  --color-light: #f5f3f4;
+  --color-light-rgb: 245, 243, 244;
+  --color-light-contrast: #000000;
+  --color-light-contrast-rgb: 0, 0, 0;
+  --color-light-shade: #d8d6d7;
+  --color-light-tint: #f6f4f5;
+}
