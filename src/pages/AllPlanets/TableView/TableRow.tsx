@@ -2,11 +2,11 @@ import React from 'react';
 import {useHistory} from 'react-router';
 import {Planet} from '../../../types/schema';
 
-interface AllPlanetsTableRowProps {
+interface TableRowProps {
   planet: Planet;
 }
 
-const AllPlanetsTableRow: React.FC<AllPlanetsTableRowProps> = ({planet}) => {
+const TableRow: React.FC<TableRowProps> = ({planet}) => {
   const history = useHistory();
 
   return (
@@ -16,9 +16,8 @@ const AllPlanetsTableRow: React.FC<AllPlanetsTableRowProps> = ({planet}) => {
       <td>{planet?.climate}</td>
       <td>{planet?.population}</td>
       <td>{planet?.terrain}</td>
-      <td className="table-button">details</td>
     </tr>
   );
 };
 
-export default AllPlanetsTableRow;
+export default TableRow;

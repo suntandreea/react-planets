@@ -19,12 +19,13 @@
     }
   }
 
-  &.secondary {
-    background: var(--color-secondary);
-    color: var(--color-dark);
+  &.tertiary {
+    background: var(--color-tertiary);
+    color: var(--color-light);
 
     .card-title {
-      color: var(--color-primary);
+      color: var(--color-light);
+      text-transform: capitalize;
     }
   }
 }

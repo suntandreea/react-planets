@@ -1,15 +1,14 @@
 import React, {useContext, useEffect, useState} from 'react';
 import PlanetsContext from '../../context/PlanetsContext';
-import {PlanetsResponse, View} from '../../types/schema';
+import {PlanetsResponse, Results, View} from '../../types/schema';
+import AllPlanetsControls from './AllPlanetsControls';
 import AllPlanetsList from './AllPlanetsList';
-import AllPlanetsViewSwitch from './AllPlanetsViewSwitch';
 
 const AllPlanets: React.FC = () => {
-  const {addNewPlanetsBatch} = useContext(PlanetsContext);
+  const {planetsCtx, addNewPlanetsBatch} = useContext(PlanetsContext);
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
-  const [view, setView] = useState<View>('table');
 
   const getAllPlanets = async () => {
     setIsLoading(true);
@@ -45,11 +44,13 @@ const AllPlanets: React.FC = () => {
 
   useEffect(() => {
     setError('');
-    getAllPlanets();
+    if (!planetsCtx.length) {
+      getAllPlanets();
+    }
   }, []);
 
   return (
-    <main>
+    <main className="planets-page">
       <h1>All Planets</h1>
 
       {isLoading
@@ -57,8 +58,8 @@ const AllPlanets: React.FC = () => {
         : error
           ? <p>{error}</p>
           : <>
-            <AllPlanetsViewSwitch view={view} setView={setView}/>
-            <AllPlanetsList view={view} />
+            <AllPlanetsControls />
+            <AllPlanetsList />
           </>
       }
     </main>

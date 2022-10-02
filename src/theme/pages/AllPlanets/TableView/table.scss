@@ -5,6 +5,9 @@
   th {
     padding: 0 0.4rem 0.4rem;
     text-align: left;
+    svg {
+      margin-left: 0.4rem;
+    }
   }
 
   tbody {
@@ -31,5 +34,22 @@
   .table-button {
     color: var(--color-primary);
     text-decoration: underline;
+  }
+}
+
+.pagination {
+
+  .page-no {
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.4rem;
+    &:hover {
+      cursor: pointer;
+      background: rgba(var(--color-tertiary-rgb), 0.1);
+    }
+    &.active {
+      color: var(--color-tertiary);
+      font-weight: 600;
+    }
+
   }
 }

@@ -23,11 +23,25 @@ export interface PlanetsResponse {
   results: Planet[];
 }
 
-export interface PlanetsPage {
-  id: number;
-  content: PlanetsResponse;
+export interface Pagination {
+  page: number;
+  content: Planet[];
 }
 
 export type View = 'table' | 'grid';
-
 export type Color = 'primary' | 'secondary' | 'tertiary' | 'dark' | 'medium' | 'light';
+export type Field = 'name' | 'diameter' | 'climate' | 'population' | 'terrain' | 'off';
+export type SortDirection = 'up' | 'down' | 'off';
+export type FilterType = 'search' | 'list' | 'slide';
+export type Results =  '10' | '30' | 'all';
+
+export interface SortCriteria {
+  field: Field;
+  direction: SortDirection;
+}
+
+export interface FilterCriteria {
+  field: Field;
+  type?: FilterType;
+  criteria?: string | string[] | number[];
+}

@@ -1,0 +1,36 @@
+.switches {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.results-switch {
+
+
+
+
+}
+
+.view-switch {
+  //background: blue;
+
+  .switch-title {
+    margin-bottom: 0.4rem;
+  }
+
+  .switch-btns {
+  }
+
+  input {
+    visibility: hidden;
+    position: absolute;
+    left: -9000px;
+  }
+
+  label {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+}
